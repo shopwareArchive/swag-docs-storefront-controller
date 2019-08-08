@@ -1,0 +1,11 @@
+{% sw_extends '@Storefront/page/checkout/cart/index.html.twig' %}
+
+{% block page_checkout_cart_product_table %}
+    {{ parent() }}
+
+    <div class="row col-md-2">
+        <a class="btn btn-primary btn-block" href={{ path('frontend.checkout.clearCart') }}>
+            Clear cart
+        </a>
+    </div>
+{% endblock %}

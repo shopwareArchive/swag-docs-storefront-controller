@@ -5,8 +5,8 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="Swag\StorefrontController\Storefront\Controller\ProductDeactivateController" public="true">
-            <argument type="service" id="product.repository"/>
+        <service id="Swag\StorefrontController\Storefront\Controller\ClearCartController" public="true">
+            <argument type="service" id="Shopware\Core\Checkout\Cart\SalesChannel\CartService"/>
 
             <call method="setContainer">
                 <argument type="service" id="service_container"/>
