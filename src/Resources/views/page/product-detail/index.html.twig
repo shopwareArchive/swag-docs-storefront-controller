@@ -1,0 +1,11 @@
+{% sw_extends '@Storefront/page/product-detail/index.html.twig' %}
+
+{% block page_product_detail_content %}
+    <div class="row col-md-2">
+        <a class="btn btn-primary btn-block" href={{ path('storefront.deactivateProduct', {id: page.product.id}) }}>
+            Deactivate product
+        </a>
+    </div>
+
+    {{ parent() }}
+{% endblock %}

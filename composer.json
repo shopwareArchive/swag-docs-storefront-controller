@@ -1,0 +1,32 @@
+{
+    "name": "swag/storefront-controller",
+    "description": "Example plugin to add an own storefront controller.",
+    "version": "v1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shopware AG"
+        }
+    ],
+    "require": {
+        "shopware/core": "*",
+        "shopware/storefront": "*"
+    },
+    "extra": {
+        "shopware-plugin-class": "Swag\\StorefrontController\\StorefrontController",
+        "label": {
+            "de-DE": "Label für das Plugin StorefrontController",
+            "en-GB": "Label for the plugin StorefrontController"
+        },
+        "description": {
+            "de-DE": "Beschreibung für das Plugin StorefrontController",
+            "en-GB": "Description for the plugin StorefrontController"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Swag\\StorefrontController\\": "src/"
+        }
+    }
+}
