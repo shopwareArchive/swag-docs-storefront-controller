@@ -8,7 +8,9 @@ use Shopware\Storefront\Controller\StorefrontController;
 use Symfony\Component\Routing\Annotation\Route;
 use Shopware\Core\Framework\Routing\Annotation\RouteScope;
 
-
+/**
+ * @RouteScope(scopes={"storefront"})
+ */
 class ClearCartController extends StorefrontController
 {
     /**
@@ -22,7 +24,6 @@ class ClearCartController extends StorefrontController
     }
 
     /**
-     * @RouteScope(scopes={"storefront"})
      * @Route("/cart/clear", name="frontend.checkout.clearCart", options={"seo"="false"}, methods={"GET"})
      */
     public function clearCart(SalesChannelContext $context)
